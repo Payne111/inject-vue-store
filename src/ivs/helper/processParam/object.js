@@ -23,8 +23,7 @@ function processObjectParam(param) {// { mod, state, actions, id } or { mods: [ 
 
             processStringParam(mod)
             
-            if (id) 
-                utils.add2Cache(id, utils.getCache(mod))
+            utils.add2Cache(id, utils.getCache(mod))
 
         } else { // { mod, state, actions, id }
             res = {}

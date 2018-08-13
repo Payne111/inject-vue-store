@@ -1,7 +1,7 @@
 {
   "name": "inject-vue-store",
   "description": "Easier and more convenient use of vuex.",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": "pjf <panjf@gegejia.com>",
   "license": "MIT",
   "private": false,

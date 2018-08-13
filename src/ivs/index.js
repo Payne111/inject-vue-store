@@ -8,6 +8,7 @@ function injectVueStore(store) {
             if (!option.mixins) {
                 option.mixins = []
             }
+            share.target = option
             share.targetMixins = option.mixins
             processParam(option.ivs)
             option.injected = true

@@ -13,7 +13,8 @@ function isEmptyArray(arr) {
 }
 
 function warn(msg) {
-    console.warn(msg)
+    msg = `[IVS WARN]: ${msg} -> from:`
+    console.warn(msg, share.target)
 }
 
 /**
@@ -76,10 +77,12 @@ function useCache(id) {
 }
 
 function add2Cache(id, res) {
-    if (hasCache(id)) {
-        warn(`缓存 ${id} 已存在`)
-    } else {
-        cache.add(id, res)
+    if (id) {
+        if (hasCache(id)) {
+            warn(`缓存 ${id} 已存在`)
+        } else {
+            cache.add(id, res)
+        }
     }
 }
 

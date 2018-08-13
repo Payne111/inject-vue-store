@@ -2,6 +2,12 @@
 
 > 更简单便捷使用vuex
 
+## 安装
+
+```bash
+npm install inject-vue-store
+```
+
 ## 引入
 
 ```js
