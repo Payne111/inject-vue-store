@@ -1,6 +1,6 @@
 # inject-vue-store
 
-> 更简单便捷使用vuex
+> vuex mapper
 
 ## 安装
 

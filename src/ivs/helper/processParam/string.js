@@ -16,13 +16,9 @@ function processStringParam(mod) {
                 return
             }
 
-            const stateMapList = []
-            for (let key in state)
-                stateMapList.push(key)
+            const stateMapList = Object.keys(state)
 
-            const actionMapList = []
-            for (let key in actions)
-                actionMapList.push(key)
+            const actionMapList = Object.keys(actions)
 
             let ret = {
                 computed: { ...utils.iMapState(mod, stateMapList) },

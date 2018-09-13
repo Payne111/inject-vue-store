@@ -9,7 +9,7 @@ function isPlainObject(obj) {
 }
 
 function isEmptyArray(arr) {
-    return !arr || arr.length == 0
+    return !arr || arr.length === 0
 }
 
 function warn(msg) {
